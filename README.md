@@ -111,6 +111,18 @@ The drivers match known physiology:
 - **Higher glucose at meal start** predicts a smaller further rise.
 - **More activity in the hour before eating** slightly lowers the predicted rise.
 
+## How this compares with published work
+
+| Study | People | Microbiome? | Best glucose-response correlation |
+|---|---|---|---|
+| Zeevi et al. 2015 (*Cell*) | 800 | Yes | ≈ 0.7 |
+| Berry et al. 2020 (*Nature Medicine*) | 1,002 | Yes | 0.77 |
+| Shen et al. 2025 (*J Diabetes Sci Technol*), T1D / T2D | 397 / 100 | No | 0.61–0.73 |
+| **This project, new people** | 45 | No | **0.63** |
+| **This project, personalised** | 45 | No | **0.78** |
+
+With only 45 people and no microbiome data, the model reaches the range of large published studies, but only once it uses a few days of the person's own responses. The comparison is indicative, since cohorts and designs differ. Unlike Shen et al., who found personal training data unnecessary, here it was the largest single improvement. See [`docs/related_work.md`](docs/related_work.md).
+
 ## Method
 
 **Data.** CGMacros v1.0.0 (PhysioNet, open access, CC BY-NC-SA 4.0): Abbott Libre Pro and Dexcom G6 Pro CGM, Fitbit heart rate and activity, logged meals with estimated macronutrients, and baseline blood labs. The primary sensor is Libre, available for all participants at 1-minute resolution.
@@ -183,7 +195,6 @@ python src/sensitivity.py --raw data/raw/CGMacros --out results_v2           # r
 ## Future work
 
 - External validation on a second CGM dataset with meal logs
-- Related-work comparison with published CGMacros benchmarks
 - Medication and sleep data, which may help close the T2D gap
 - Nested cross-validation with hyperparameter tuning
 - Uncertainty estimates per prediction (e.g., conformal intervals) for safer use
