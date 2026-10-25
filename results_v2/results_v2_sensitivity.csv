@@ -1,0 +1,5 @@
+setting,meals,mae_carbs_only,mae_lgbm,mae_lgbm_history,pct_reduction_vs_carbs
+main,1404,28.87,24.5,22.12,23.37
+dexcom_sensor,1374,32.51,27.62,24.77,23.82
+no_overlap_exclusion,1632,27.7,23.37,20.81,24.87
+no_plausibility_filter,1450,28.88,24.07,22.08,23.53

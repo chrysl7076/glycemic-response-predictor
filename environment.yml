@@ -1,0 +1,10 @@
+name: glycemic
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - pandas>=2.0
+  - numpy>=1.26
+  - scikit-learn>=1.4
+  - lightgbm>=4.0
+  - shap>=0.45
+  - matplotlib>=3.8

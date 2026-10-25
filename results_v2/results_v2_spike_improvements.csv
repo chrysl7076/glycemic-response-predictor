@@ -1,0 +1,7 @@
+model,auroc,ci_lo,ci_hi
+M2b peak (current best LGBM),0.871,0.838,0.903
+M4 peak (fine-tuned CNN),0.873,0.839,0.907
+"Spike classifier, personalized",0.855,0.819,0.888
+Avg: M2b + M4,0.89,0.858,0.919
+Avg: classifier + M4,0.884,0.847,0.913
+Avg: all three,0.887,0.855,0.916
