@@ -13,6 +13,8 @@ Two people can eat the same meal and have very different glucose responses, whic
 3. **The tree model and the deep model are complementary.** Personalised LightGBM was slightly more accurate at 60 minutes (6.7% lower error; 95% CI 1–12%). The temporal CNN was better at 30 minutes and is the only model that predicts the full curve. **Averaging the two gave the best spike detection: AUROC 0.89** (95% CI 0.86–0.92), compared with 0.60 for carbs alone.
 4. **The results are robust:** the improvement holds at 23–25% across sensor choice (Libre vs Dexcom) and data-cleaning rules.
 
+**Full report:** [`docs/report.pdf`](docs/report.pdf)
+
 ## Models compared
 
 | ID | Model | Personalised? |
